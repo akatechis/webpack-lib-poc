@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-index": "node src/index.build",
-    "build": "npm run build-index && webpack"
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
