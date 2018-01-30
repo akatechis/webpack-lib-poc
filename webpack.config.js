@@ -1,12 +1,12 @@
 const path = require("path");
-const buildPlugin = require("./src/index.build");
+const buildPlugin = require("./buildplugin");
 
 module.exports = {
-  entry: path.resolve(__dirname, "src/index.js"),
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "build/"),
+    path: path.resolve(__dirname, "/dist"),
     filename: "mylib.js",
-    libraryTarget: "umd"
+    libraryTarget: "umd",
   },
   plugins: [buildPlugin]
 };
